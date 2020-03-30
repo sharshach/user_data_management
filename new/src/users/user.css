@@ -1,0 +1,17 @@
+.listitem{
+	background-color: blue;
+	padding: 5px;
+	color:white;
+	border-radius: 10px;
+}
+.userblock{
+	background-color: #7075c8;
+	color:white;
+}
+.singleitem{
+	align-items: left;
+	text-align: left;
+	color:white;
+	background-color: lightblue;
+	border-radius: 10px
+}

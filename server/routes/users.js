@@ -6,7 +6,7 @@ var url=require('url');
 const mysql = require('mysql');
 
 const con = mysql.createConnection({
-	  host: "localhost",
+	  host: "192.168.43.1",
 	  user: "root",
 	  database: 'userdata',
 });
@@ -44,7 +44,7 @@ const put_data = async (url,data) => {
 	  console.log(error);
 	}
 };
-router.post('/add', function(req, res, next) {
+router.post('/:user', function(req, res, next) {
 	console.log(req.body.github);
 	console.log("in add user");
 	const url = "https://api.github.com/users/"+req.body.github;

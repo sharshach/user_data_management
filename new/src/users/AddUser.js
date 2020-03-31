@@ -20,7 +20,7 @@ export default class UserData extends Component {
 
     handleSubmit=(event)=> {
         event.preventDefault();
-        axios.post('http://localhost:4000/users/add', {
+        axios.post('http://localhost:4000/api/users/'+this.state.user_github, {
             github:this.state.user_github,
             linkedin:this.state.user_linkedin,
             codechef:this.state.user_codechef,

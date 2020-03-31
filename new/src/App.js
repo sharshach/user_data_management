@@ -11,19 +11,19 @@ function App() {
 
     <BrowserRouter>
         <div>
-          <Route exact={true} path='/user/add' render={() => (
+          <Route exact={true} path='/users/add' render={() => (
             <div className="App">
               <AddUser />
             </div>
           )}/>
 
-          <Route exact={true} path='/user' render={() => (
+          <Route exact={true} path='/users' render={() => (
             <div className="App">
               <UserList />
             </div>
           )}/>
 
-          <Route exact={true} path='/user/:user' render={() => (
+          <Route exact={true} path='/users/:user' render={() => (
             <div className="App">
               <UserData />
             </div>
@@ -38,14 +38,14 @@ function App() {
       <h2>WELCOME</h2>
         <a
           className="App-link"
-          href="/user"
+          href="/users"
           rel="noopener noreferrer"
         >
           list all user
         </a>
         <a
           className="App-link"
-          href="/user/add"
+          href="/users/add"
           rel="noopener noreferrer"
         >
           add new user

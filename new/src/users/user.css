@@ -15,3 +15,13 @@
 	background-color: lightblue;
 	border-radius: 10px
 }
+.userlist{
+	background-color: blue;
+	text-align: center;
+	border-radius: 10px; 
+}
+.userlistitem{
+	color:white;
+	align-items: center;
+	text-align: center;
+}
